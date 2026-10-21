@@ -1,0 +1,8 @@
+{
+  "portal_url": "https://demo.invalid",
+  "auth_method": "demo",
+  "mac_address": "00:1A:79:00:00:01",
+  "serial_number": "",
+  "timeout_seconds": 15,
+  "spec_path": ""
+}

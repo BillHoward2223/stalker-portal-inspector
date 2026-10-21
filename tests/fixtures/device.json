@@ -1,0 +1,8 @@
+{
+  "panel": {"id": "panel-northwind"},
+  "device": {
+    "mac": "00:1A:79:00:00:01",
+    "serial": "SN-NORTHWIND-1001",
+    "last_seen_at": "2026-04-02T08:30:00Z"
+  }
+}

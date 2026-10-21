@@ -1,0 +1,7 @@
+{
+  "data": [
+    {"id": "ch-news", "name": "Northwind News HD", "category": {"name": "News"}, "live": true},
+    {"id": "ch-news", "name": "Northwind News HD", "category": {"name": "News"}, "live": true}
+  ],
+  "meta": {"total": 2}
+}

@@ -1,0 +1,6 @@
+{
+  "data": [
+    {"id": "ch-cinema", "name": "Northwind Cinema", "category": {"name": "Movies"}, "live": false}
+  ],
+  "meta": {"total": 3}
+}

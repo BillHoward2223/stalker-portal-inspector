@@ -1,0 +1,58 @@
+{
+  "spec_version": "1.0",
+  "title": "Example administrator API (fictional)",
+  "allowed_hosts": ["portal.example.com"],
+  "auth": {
+    "type": "session",
+    "header_name": "Authorization",
+    "token_prefix": "Bearer",
+    "login": {
+      "method": "POST",
+      "path": "/admin-api/v1/session",
+      "username_field": "username",
+      "password_field": "password",
+      "token_path": "access_token",
+      "expires_in_path": "expires_in",
+      "refresh_path": "/admin-api/v1/session/refresh",
+      "refresh_token_path": "refresh_token",
+      "refresh_token_field": "refresh_token"
+    }
+  },
+  "endpoints": {
+    "device_info": {
+      "method": "GET",
+      "path": "/admin-api/v1/devices/{mac}"
+    },
+    "account_info": {
+      "method": "GET",
+      "path": "/admin-api/v1/accounts/{mac}"
+    },
+    "channels": {
+      "method": "GET",
+      "path": "/admin-api/v1/channels",
+      "pagination": {
+        "page_param": "page",
+        "page_size_param": "per_page",
+        "page_size": 100,
+        "items_path": "data",
+        "total_path": "meta.total",
+        "start_page": 1
+      }
+    }
+  },
+  "field_map": {
+    "portal_id": "panel.id",
+    "mac_address": "device.mac",
+    "status": "subscription.status",
+    "expires_at": "subscription.expires_at",
+    "serial_number": "device.serial",
+    "last_connection_at": "device.last_seen_at"
+  },
+  "channel_fields": {
+    "record_id": "id",
+    "name": "name",
+    "category": "category.name",
+    "is_live": "live"
+  },
+  "confirmed_proprietary_fields": []
+}

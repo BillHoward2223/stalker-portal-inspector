@@ -1,0 +1,10 @@
+[project]
+name = "stalker-portal-inspector"
+version = "1.0.0"
+description = "Authorized Stalker/Ministra portal account and channel-metadata inspector"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
